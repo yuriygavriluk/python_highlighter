@@ -33,7 +33,7 @@ def create_app():
         @:return marked text, e.g., <mark>highlighted text</mark>."""
         result = text
 
-        # TODO: add an implementation
+        result = "<mark>" + text + "</mark>"
 
         return result
 
@@ -43,7 +43,7 @@ def create_app():
         @:return marked text, e.g., "sample text <mark>highlighted part</mark> rest of the text"."""
         result = text
 
-        # TODO: add an implementation
+        result = text.replace(expr, "<mark>" + expr + "</mark>")
 
         return result
 
